@@ -43,9 +43,9 @@ const NavBar = ({ cartItemCount }) => {
               )}
             </Link>
           </li>
-          <li className="flex items-center p-2  justify-end">
+          <li className="flex items-center p-2 mt-2 justify-end">
             <Link href="/services">
-              <button className="bg-brown-dark text-white p-4 pl-8 pr-8 pt-6 pb-6 rounded-3xl text-md">Get Styled</button>
+              <button className="bg-brown-dark text-white p-3 pl-6 pr-6 pt-4 pb-4 rounded-3xl text-md">Get Styled</button>
             </Link>
           </li>
         </ul>
