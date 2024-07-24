@@ -13,6 +13,9 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors: {
+        colors: {
+          'broken-white':'#d5d1cb ',  // Adjust the hex code as needed
+        },
         beige: {
           light: '#F5F5DC',
           DEFAULT: '#DCD5C7',
