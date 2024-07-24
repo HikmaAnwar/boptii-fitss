@@ -39,7 +39,7 @@ const NavBar = ({ cartItemCount }) => {
           </Link>
         </li>
         <li>
-          <button href="/services" className="bg-indigo-300 text-black p-4 rounded-3xl">Get Styled</button>
+          <button href="/services" className="bg-brown text-black p-4 rounded-3xl">Get Styled</button>
         </li>
       </ul>
     </nav>
