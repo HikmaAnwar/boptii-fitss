@@ -7,7 +7,7 @@ const Footer = () => {
             <div className="container mx-auto flex justify-between items-start">
                 {/* Company Name */}
                 <div className="w-1/3 text-center">
-                    <p className="text-md font-sarif font-semibold">BOPTII FITS</p>
+                    <p className="text-xl font-san font-bold">BOPTII FITS</p>
                 </div>
                 
                 <div className="w-1/3 flex text-xl justify-center">
