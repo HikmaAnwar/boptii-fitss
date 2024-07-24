@@ -19,7 +19,7 @@ const Home = () => {
       <div className="py-0 px-0">
         <div className="relative">
           <Image src="/assets/vogue.jpg" alt="vogue cover" layout="responsive" width={1500} height={2000} />
-          <div className="absolute inset-0 flex flex-col items-center justify-center mt-0 pb-24">
+          <div className="absolute inset-0 flex flex-col items-center justify-center mt-4 pb-24">
             <p className="italic font-semibold font-sarif text-black text-4xl mb-16 pb-14">HOW IT WORKS</p>
             <div className="flex space-x-4">
               <div className="bg-colors-broken-white p-4 rounded-lg shadow-lg max-w-md  flex-1">
@@ -38,6 +38,10 @@ const Home = () => {
                  All styled pieces in your Lookbook will be linked, enabling you to easily click and shop.</p>
               </div>
             </div>
+            <Link href="/services">
+            <button className="bg-brown-dark text-white p-3 pl-6 pr-6 pt-4 pb-4 rounded-3xl text-md my-6">Get Styled</button>
+          </Link>
+          
           </div>
         </div>
       </div>

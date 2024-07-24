@@ -8,7 +8,7 @@ const Footer = () => {
                     <p>BOPTII FITS</p>
                 </div>
                 <div className="text-sm">
-                    &copy {new Date().getFullYear()} Boptii. All rights reserved.
+                    &copy {new Date().getFullYear()} Hikma Anwar. All rights reserved.
                 </div>
             
             </div>
