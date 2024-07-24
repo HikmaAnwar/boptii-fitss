@@ -1,11 +1,7 @@
-import Image from "next/image";
+import Home from '../../src/app/home/page';
 
-export default function Home() {
+export default function Main() {
   return (
-   <>
-   <div>
-    <h1>hey hey</h1>
-   </div>
-   </>
+    <Home/>
   );
 }
