@@ -6,9 +6,9 @@ import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
 const NavBar = ({ cartItemCount }) => {
   return (
-    <nav className="flex justify-between items-center bg-white rounded-md p-6 text-black mx-auto w-full">
-      <div className="text-black font-bold no-underline">
-        <Link href="/">Boptii Fits</Link>
+    <nav className="flex justify-between items-center bg-white rounded-sm p-10 text-black mx-auto w-full h-76">
+      <div className="text-black font-bold font-serif text-3xl">
+        <Link href="/">BOPTII FITS</Link>
       </div>
       <ul className="flex space-x-6 list-none">
         <li className="text-black hover:text-gray-500">
@@ -37,6 +37,9 @@ const NavBar = ({ cartItemCount }) => {
               </span>
             )}
           </Link>
+        </li>
+        <li>
+          <button href="/services" className="bg-indigo-300 text-black p-4 rounded-3xl">Get Styled</button>
         </li>
       </ul>
     </nav>
