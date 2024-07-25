@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <footer className="bg-colors-broken-white text-black py-14">
             <div className="container mx-auto flex justify-between items-start">
-                {/* Company Name */}
+                
                 <div className="w-1/3 text-center">
                     <p className="text-xl font-san font-bold">BOPTII FITS</p>
                 </div>
