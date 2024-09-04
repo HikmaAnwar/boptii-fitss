@@ -5,7 +5,7 @@ const Services = () => {
   return (
     <div className="bg-white">
       <div>
-        <h2 className="flex min-h-screen justify-center items-center text-black text-3xl">
+        <h2 className="flex mb-6 min-h-screen justify-center items-center text-black text-3xl">
           Styling Services
         </h2>
         <hr className="border-t border-gray-300 mb-6" />
