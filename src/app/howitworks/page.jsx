@@ -71,7 +71,7 @@ const HowItWorks = () => {
           </p>
         </div>
       </div>
-      <div className="flex items-center justify-center min-h-screen">
+      <div className="flex items-center justify-center min-h-screen ">
         <Link href="/services">
           <button className="bg-brown-dark text-white p-3 pl-6 pr-6 pt-4 pb-4 rounded-3xl text-md my-2">
             Get Styled
