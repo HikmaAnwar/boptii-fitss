@@ -3,7 +3,7 @@ import Image from "next/image";
 const HowItWorks = () => {
   return (
     <div className="bg-white">
-      <p className=" font-semibold font-san  text-black text-center text-4xl pt-52 pb-14 ">
+      <p className=" font-semibold font-san my-6 text-black text-center text-4xl pt-52 pb-14 ">
         HOW IT WORKS
       </p>
       <div className="relative h-screen w-full flex space-x-4">
