@@ -71,11 +71,13 @@ const HowItWorks = () => {
           </p>
         </div>
       </div>
-      <Link href="/services">
-        <button className="bg-brown-dark text-white p-3 pl-6 pr-6 pt-4 pb-4 rounded-3xl text-md my-6">
-          Get Styled
-        </button>
-      </Link>
+      <div className="flex items-center justify-center min-h-screen">
+        <Link href="/services">
+          <button className="bg-brown-dark text-white p-3 pl-6 pr-6 pt-4 pb-4 rounded-3xl text-md my-6">
+            Get Styled
+          </button>
+        </Link>
+      </div>
     </div>
   );
 };
