@@ -3,19 +3,20 @@ import Image from "next/image";
 
 const HowItWorks = () => {
   return (
-    <div className="bg-white w-full min-h-screen pb-16">
-      <p className="font-semibold font-san my-6 text-black text-center text-4xl pt-52 pb-8">
+    <div className="bg-white w-full min-h-screen">
+      <p className="font-semibold font-san my-6 text-black text-center text-3xl md:text-4xl pt-32 md:pt-52 pb-8">
         HOW IT WORKS
       </p>
-      <div className="relative w-full flex space-x-4">
-        <div className="bg-colors-broken-white p-4 rounded-lg shadow-lg max-w-md flex-1">
+      <div className="relative w-full flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-4 px-4 md:px-8">
+        <div className="bg-colors-broken-white p-4 rounded-lg shadow-lg flex-1">
           <Image
             src="/assets/check-list.jpg"
             alt="images"
             width={500}
             height={100}
+            className="w-full h-auto"
           />
-          <h3 className="text-xl text-center text-black font-serif font-semibold">
+          <h3 className="text-lg md:text-xl text-center text-black font-serif font-semibold mt-4">
             STEP 1: STYLE QUIZ & PAYMENT
           </h3>
           <p className="mt-2 text-center text-black font-san">
@@ -25,9 +26,15 @@ const HowItWorks = () => {
             check out and place your order.
           </p>
         </div>
-        <div className="bg-colors-broken-white p-4 rounded-lg shadow-lg max-w-sm flex-1">
-          <Image src="/assets/card.jpg" alt="images" width={500} height={100} />
-          <h3 className="text-xl text-center text-black font-serif font-semibold">
+        <div className="bg-colors-broken-white p-4 rounded-lg shadow-lg flex-1">
+          <Image
+            src="/assets/card.jpg"
+            alt="images"
+            width={500}
+            height={100}
+            className="w-full h-auto"
+          />
+          <h3 className="text-lg md:text-xl text-center text-black font-serif font-semibold mt-4">
             STEP 2: WAITING PERIOD
           </h3>
           <p className="mt-2 text-center text-black font-san">
@@ -37,14 +44,15 @@ const HowItWorks = () => {
             within the delivery time you chose!
           </p>
         </div>
-        <div className="bg-colors-broken-white p-4 rounded-lg shadow-lg max-w-sm flex-1">
+        <div className="bg-colors-broken-white p-4 rounded-lg shadow-lg flex-1">
           <Image
             src="/assets/hour-glass.jpg"
             alt="images"
             width={500}
             height={100}
+            className="w-full h-auto"
           />
-          <h3 className="text-xl font-semibold font-serif text-center text-black">
+          <h3 className="text-lg md:text-xl text-center text-black font-serif font-semibold mt-4">
             STEP 3: RECEIVAL & DIRECT SHOPPING
           </h3>
           <p className="mt-2 text-center text-black font-san">
@@ -54,14 +62,15 @@ const HowItWorks = () => {
             easily click and shop.
           </p>
         </div>
-        <div className="bg-colors-broken-white p-4 rounded-lg shadow-lg max-w-sm flex-1">
+        <div className="bg-colors-broken-white p-4 rounded-lg shadow-lg flex-1">
           <Image
             src="/assets/t-shirt.jpg"
             alt="images"
             width={500}
             height={100}
+            className="w-full h-auto"
           />
-          <h3 className="text-xl font-semibold font-serif text-center text-black">
+          <h3 className="text-lg md:text-xl text-center text-black font-serif font-semibold mt-4">
             STEP 4: STYLE YOUR OUTFIT
           </h3>
           <p className="mt-2 text-center text-black font-san">
@@ -73,7 +82,7 @@ const HowItWorks = () => {
       </div>
       <div className="flex items-center justify-center my-12">
         <Link href="/services">
-          <button className="bg-brown-dark text-white p-3 pl-6 pr-6 pt-4 pb-4 rounded-3xl text-md">
+          <button className="bg-brown-dark text-white px-6 py-4 rounded-3xl text-md">
             Get Styled
           </button>
         </Link>
