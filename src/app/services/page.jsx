@@ -3,28 +3,47 @@ import Link from "next/link";
 
 const Services = () => {
   return (
-    <div className="bg-white">
-      <div>
-        <h2 className="flex mb-6 min-h-screen justify-center items-center text-black text-3xl">
+    <div className="bg-white px-4 py-8 sm:py-16 lg:px-8">
+      <div className="text-center mb-12">
+        <h2 className="text-3xl font-semibold text-gray-800 sm:text-4xl">
           Styling Services
         </h2>
       </div>
-      <hr className="border-t border-gray-300 mb-6" />
-      <div className="flex justify-center space-x-8 mb-12">
-        <div>
-          <Image src="/assets/women-lookbook.jpg" width={500} height={100} />
-          <p className="text-black text-xl mt-2">
-            Women's Personalized Lookbook
-          </p>
-          <p className="text-black text-md mt-2  mb-8">from $150.00</p>
-        </div>
-        <div>
-          <Image src="/assets/men-lookbook.jpg" width={500} height={100} />
-          <p className="text-black text-xl mt-2">Men's Personalized Lookbook</p>
-          <p className="text-black text-md mt-2  mb-8">from $150.00</p>
-        </div>
+      <hr className="border-t border-gray-300 mb-12" />
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 max-w-5xl mx-auto">
+        <Link href="/services/women-personalized-lookbook">
+          <div className="text-center">
+            <Image
+              src="/assets/women-lookbook.jpg"
+              width={500}
+              height={500}
+              alt="Women's Lookbook"
+              className="object-cover rounded-lg shadow-md"
+            />
+            <h3 className="text-xl font-medium text-gray-800 mt-4">
+              Women's Personalized Lookbook
+            </h3>
+            <p className="text-gray-600 text-lg mt-2">from $150.00</p>
+          </div>
+        </Link>
+        <Link href="/services/men-personalized-lookbook">
+          <div className="text-center">
+            <Image
+              src="/assets/men-lookbook.jpg"
+              width={500}
+              height={500}
+              alt="Men's Lookbook"
+              className="object-cover rounded-lg shadow-md"
+            />
+            <h3 className="text-xl font-medium text-gray-800 mt-4">
+              Men's Personalized Lookbook
+            </h3>
+            <p className="text-gray-600 text-lg mt-2">from $150.00</p>
+          </div>
+        </Link>
       </div>
     </div>
   );
 };
+
 export default Services;
