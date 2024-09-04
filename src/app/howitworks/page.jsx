@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const HowItWorks = () => {
   return (
-    <div className="bg-white w-full min-h-screen">
+    <div className="bg-white w-full min-h-screen pb-16">
       <p className="font-semibold font-san my-6 text-black text-center text-4xl pt-52 pb-8">
         HOW IT WORKS
       </p>
@@ -71,7 +71,7 @@ const HowItWorks = () => {
           </p>
         </div>
       </div>
-      <div className="flex items-center justify-center  my-12">
+      <div className="flex items-center justify-center my-12">
         <Link href="/services">
           <button className="bg-brown-dark text-white p-3 pl-6 pr-6 pt-4 pb-4 rounded-3xl text-md">
             Get Styled
