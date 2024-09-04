@@ -25,6 +25,7 @@ const HowItWorks = () => {
           </p>
         </div>
         <div className="bg-colors-broken-white  p-4 rounded-lg shadow-lg max-w-sm flex-1">
+          <Image src="/assets/card.jpg" alt="images" width={500} height={100} />
           <h3 className="text-xl text-center text-black font-serif font-semibold">
             STEP 2: WAITING PERIOD
           </h3>
@@ -36,6 +37,12 @@ const HowItWorks = () => {
           </p>
         </div>
         <div className="bg-colors-broken-white p-4 rounded-lg shadow-lg max-w-sm flex-1">
+          <Image
+            src="/assets/hour-glass.jpg"
+            alt="images"
+            width={500}
+            height={100}
+          />
           <h3 className="text-xl font-semibold font-serif text-center text-black">
             STEP 3: RECEIVAL & DIRECT SHOPPING
           </h3>
@@ -47,6 +54,12 @@ const HowItWorks = () => {
           </p>
         </div>
         <div className="bg-colors-broken-white p-4 rounded-lg shadow-lg max-w-sm flex-1">
+          <Image
+            src="/assets/t-shirt.jpg"
+            alt="images"
+            width={500}
+            height={100}
+          />
           <h3 className="text-xl font-semibold font-serif text-center text-black">
             STEP 3: RECEIVAL & DIRECT SHOPPING
           </h3>
