@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 const HowItWorks = () => {
   return (
-    <div className="bg-white">
+    <div className="bg-white w-full h-full">
       <p className=" font-semibold font-san my-6 text-black text-center text-4xl pt-52 pb-14 ">
         HOW IT WORKS
       </p>
