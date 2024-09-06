@@ -2,6 +2,7 @@
 
 import { useParams } from "next/navigation";
 import WomensPersonalizedLookbook from "@/components/lookbook-page";
+import MensPersonalizedLookbook from "@/components/lookbook2";
 
 const PersonalizedLookbook = () => {
   const { gender } = useParams();
@@ -17,7 +18,7 @@ const PersonalizedLookbook = () => {
       {gender === "women" ? (
         <WomensPersonalizedLookbook />
       ) : (
-        <p>This is the men's lookbook content.</p>
+        <MensPersonalizedLookbook />
       )}
     </div>
   );
