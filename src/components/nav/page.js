@@ -1,35 +1,55 @@
-'use client';
-import Link from 'next/link';
-import { useRouter } from 'next/navigation';
-import React, { useState, useEffect } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+"use client";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+import React, { useState, useEffect } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 
 const NavBar = ({ cartItemCount }) => {
   const router = useRouter();
 
   return (
-    <nav className="fixed p-10 top-0 left-0 w-full z-10 bg-white bg-opacity-50 shadow-md transition-all duration-300">
+    <nav className="fixed p-10 top-0 left-0 w-full z-10 bg-colors-broken-white bg-opacity-50 shadow-md transition-all duration-300">
       <div className="flex justify-between items-center p-0.5 text-black mx-auto w-full h-20">
         <div className="text-gray-900 font-bold font-serif text-3xl">
           <Link href="/">BOPTII FITS</Link>
         </div>
         <ul className="flex space-x-6 list-none text-lg">
-          <li className={`text-gray-900 pt-2 hover:text-gray-500 mt-6 ${router.pathname === '/' && 'underline'}`}>
+          <li
+            className={`text-gray-900 pt-2 hover:text-gray-500 mt-6 ${
+              router.pathname === "/" && "underline"
+            }`}
+          >
             <Link href="/">Home</Link>
           </li>
-          <li className={`text-gray-900 pt-2 hover:text-gray-500  mt-6 ${router.pathname === '/howitworks' && 'underline'}`}>
+          <li
+            className={`text-gray-900 pt-2 hover:text-gray-500  mt-6 ${
+              router.pathname === "/howitworks" && "underline"
+            }`}
+          >
             <Link href="/howitworks">How it works</Link>
           </li>
-          <li className={`text-gray-900 pt-2 hover:text-gray-500  mt-6 ${router.pathname === '/services' && 'underline'}`}>
+          <li
+            className={`text-gray-900 pt-2 hover:text-gray-500  mt-6 ${
+              router.pathname === "/services" && "underline"
+            }`}
+          >
             <Link href="/services">Services</Link>
           </li>
-          <li className={`text-gray-900 pt-2 hover:text-gray-500  mt-6 ${router.pathname === '/contact' && 'underline'}`}>
+          <li
+            className={`text-gray-900 pt-2 hover:text-gray-500  mt-6 ${
+              router.pathname === "/contact" && "underline"
+            }`}
+          >
             <Link href="/contact">Contact</Link>
           </li>
           <li className="text-black pt-2 hover:text-gray-500  mt-6">
-            <Link href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+            <Link
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon icon={faInstagram} size="lg" />
             </Link>
           </li>
@@ -45,7 +65,9 @@ const NavBar = ({ cartItemCount }) => {
           </li>
           <li className="flex items-center p-2 mt-2 justify-end">
             <Link href="/services">
-              <button className="bg-brown-dark text-white p-3 pl-6 pr-6 pt-4 pb-4 rounded-3xl text-md">Get Styled</button>
+              <button className="bg-brown-dark text-white p-3 pl-6 pr-6 pt-4 pb-4 rounded-3xl text-md">
+                Get Styled
+              </button>
             </Link>
           </li>
         </ul>
