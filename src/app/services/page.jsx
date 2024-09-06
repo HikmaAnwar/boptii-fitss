@@ -1,5 +1,3 @@
-// pages/services/index.js
-
 import Image from "next/image";
 import Link from "next/link";
 
@@ -18,7 +16,7 @@ const Services = () => {
       </div>
       <hr className="border-t border-gray-300 mb-12" />
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-8xl mx-2">
-        <Link href="/services/women-personalized-lookbook">
+        <Link href="/services/women">
           <div className="text-center">
             <Image
               src="/assets/women-lookbook.jpg"
@@ -33,7 +31,7 @@ const Services = () => {
             <p className="text-gray-600 text-lg mt-2">from birr 1000.00</p>
           </div>
         </Link>
-        <Link href="/services/men-personalized-lookbook">
+        <Link href="/services/men">
           <div className="text-center">
             <Image
               src="/assets/men-lookbook.jpg"
