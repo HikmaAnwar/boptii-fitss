@@ -3,11 +3,10 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const WomensPersonalizedLookbook = () => {
-  // Example state to ensure consistency
   const [clientRender, setClientRender] = useState(false);
 
   useEffect(() => {
-    setClientRender(true); // Set state to trigger client-side render
+    setClientRender(true);
   }, []);
 
   return (
