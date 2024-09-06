@@ -23,7 +23,7 @@ const Services = () => {
               width={500}
               height={500}
               alt="Women's Lookbook"
-              className="object-cover rounded-lg shadow-md"
+              className="object-cover rounded-sm shadow-sm"
             />
             <h3 className="text-xl font-medium text-gray-800 mt-4">
               Women's Personalized Lookbook
@@ -38,7 +38,7 @@ const Services = () => {
               width={500}
               height={500}
               alt="Men's Lookbook"
-              className="object-cover rounded-lg shadow-md"
+              className="object-cover rounded-sm shadow-sm"
             />
             <h3 className="text-xl font-medium text-gray-800 mt-4">
               Men's Personalized Lookbook
