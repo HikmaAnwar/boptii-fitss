@@ -60,14 +60,19 @@ const WomensPersonalizedLookbook = () => {
               <p className="text-black mt-4 mb-8">Prices vary</p>
               <div className="space-y-4 mb-4">
                 <select className="w-full p-2 text-black border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
-                  <option value="">Select Delivery Preference</option>
-                  <option value="standard">Standard</option>
-                  <option value="express">Express</option>
+                  <option value="">Select number of outfits</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
                 </select>
                 <select className="w-full p-2  text-black border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
-                  <option value="">Select Outfit Preference</option>
-                  <option value="casual">Casual</option>
-                  <option value="formal">Formal</option>
+                  <option value="">Select Delivery Time</option>
+                  <option value="Priority(5-7 days)">Priority(5-7 days)</option>
+                  <option value="General(12-15 days)">
+                    General(12-15 days)
+                  </option>
                 </select>
               </div>
               <button className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">
