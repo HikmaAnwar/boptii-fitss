@@ -18,24 +18,24 @@ const MensPersonalizedLookbook = () => {
             <Link href="/services/men">Men's Personalized Lookbook</Link>
           </div>
 
-          <div className="flex">
-            <div className="w-1/2 pr-4">
+          <div className="flex flex-col lg:flex-row">
+            <div className="lg:w-1/2 lg:pr-4 mb-8 lg:mb-0">
               <Image
                 src="/assets/men-lookbook.jpg"
                 alt="Lookbook Image"
                 width={1454}
                 height={1400}
-                className="w-full mt-52 h-auto rounded-lg"
+                className="w-full h-auto rounded-lg"
               />
             </div>
-            <div className="w-1/2 pl-4">
-              <h1 className="text-black text-5xl font-serif mb-4">
+            <div className="lg:w-1/2 lg:pl-4">
+              <h1 className="text-black text-3xl sm:text-4xl lg:text-5xl font-serif mb-4">
                 Men's Personalized Lookbook
               </h1>
-              <p className="text-black text-xl mb-12 font-serif">
+              <p className="text-black text-lg sm:text-xl mb-12 font-serif">
                 from birr 1000.00
               </p>
-              <p className="text-xl py-1 mb-4 text-gray-800">
+              <p className="text-lg sm:text-xl py-1 mb-4 text-gray-800">
                 This virtual lookbook contains styled outfits based on your
                 personal preferences, sizing, and budget. All pieces will be
                 linked allowing you to shop for your virtually styled outfits
@@ -59,11 +59,11 @@ const MensPersonalizedLookbook = () => {
               <div className="space-y-4 mb-4">
                 <label
                   htmlFor="Number of outfits"
-                  className="block text-md font-serif text-gray-800 "
+                  className="block text-md font-serif text-gray-800"
                 >
                   Number of Outfits:
                 </label>
-                <select className="w-2/3 p-4 mb-4 text-black border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-colors-broken-white">
+                <select className="w-full sm:w-2/3 p-4 mb-4 text-black border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-colors-broken-white">
                   <option value="">Select number of outfits</option>
                   <option value="3">3</option>
                   <option value="4">4</option>
@@ -77,7 +77,7 @@ const MensPersonalizedLookbook = () => {
                 >
                   Delivery Time:
                 </label>
-                <select className="w-2/3 p-4 text-black border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-colors-broken-white">
+                <select className="w-full sm:w-2/3 p-4 text-black border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-colors-broken-white">
                   <option value="">Select Delivery Time</option>
                   <option value="Priority(5-7 days)">Priority(5-7 days)</option>
                   <option value="General(12-15 days)">
@@ -85,7 +85,7 @@ const MensPersonalizedLookbook = () => {
                   </option>
                 </select>
               </div>
-              <button className="bg-brown-dark w-2/3 text-white p-6 pl-6 pr-6 pt-6 pb-6 rounded-3xl text-lg my-6">
+              <button className="bg-brown-dark w-full sm:w-2/3 text-white p-6 rounded-3xl text-lg my-6">
                 Order
               </button>
             </div>
