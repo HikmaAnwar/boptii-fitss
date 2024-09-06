@@ -7,4 +7,13 @@ const PersonalizedLookbook = () => {
   if (!gender) {
     return <p>Loading...</p>;
   }
+
+  return (
+    <div>
+      <h1>{gender === "women" ? "women's" : "Men's"} Personalized Lookbook</h1>
+      {gender === "women" ? <p>....</p> : <p>mbnkdnj</p>}
+    </div>
+  );
 };
+
+export default PersonalizedLookbook;
