@@ -20,46 +20,50 @@ const WomensPersonalizedLookbook = () => {
 
           <div className="flex">
             <div className="w-1/2 pr-4">
-              {" "}
-              {/* Image container */}
               <Image
                 src="/assets/women-lookbook.jpg"
                 alt="Lookbook Image"
                 width={500}
                 height={500}
-                className="w-full h-auto rounded-lg"
+                className="w-full mt-52 h-auto rounded-lg"
               />
             </div>
             <div className="w-1/2 pl-4">
-              {" "}
-              {/* Text content container */}
               <h1 className="text-black text-5xl font-serif mb-4">
                 Women's Personalized Lookbook
               </h1>
-              <p className="text-black text-xl mb-6 font-serif">
+              <p className="text-black text-xl mb-12 font-serif">
                 from birr 1000.00
               </p>
-              <p className="text-lg mb-4 text-black">
+              <p className="text-xl py-1 mb-4 text-gray-800">
                 This virtual lookbook contains styled outfits based on your
                 personal preferences, sizing, and budget. All pieces will be
                 linked allowing you to shop for your virtually styled outfits
                 directly from your lookbook!
               </p>
-              <ul className="list-disc text-black ml-6 mb-4">
-                <li>All lookbooks are delivered via email.</li>
-                <li>
+              <ul className="list-disc italic text-lg py-2 text-gray-800 ml-6 mb-4">
+                <li className="py-1">All lookbooks are delivered via email.</li>
+                <li className="py-1">
                   After you place your order, we will email you to send inspo
                   pictures. Please note that your looks may not be as accurate
                   if inspo pictures are not sent.
                 </li>
               </ul>
-              <p className="text-black">
+              <p className="text-gray-800 text-lg italic">
                 Choose your delivery and outfit preferences, and click order to
                 begin your style quiz
               </p>
-              <p className="text-black mt-4 mb-8">Prices vary</p>
+              <p className="text-gray-800 italic text-lg mt-4 mb-8">
+                Prices vary
+              </p>
               <div className="space-y-4 mb-4">
-                <select className="w-full p-2 text-black border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <label
+                  htmlFor="Number of outfits"
+                  className="block text-md font-serif text-gray-800 "
+                >
+                  Number of Outfits:
+                </label>
+                <select className="w-2/3 p-4 mb-4 text-black border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-colors-broken-white">
                   <option value="">Select number of outfits</option>
                   <option value="3">3</option>
                   <option value="4">4</option>
@@ -67,7 +71,13 @@ const WomensPersonalizedLookbook = () => {
                   <option value="6">6</option>
                   <option value="7">7</option>
                 </select>
-                <select className="w-full p-2  text-black border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <label
+                  htmlFor="Delivery time"
+                  className="block text-md font-serif text-gray-800"
+                >
+                  Delivery Time:
+                </label>
+                <select className="w-2/3 p-4 text-black border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-colors-broken-white">
                   <option value="">Select Delivery Time</option>
                   <option value="Priority(5-7 days)">Priority(5-7 days)</option>
                   <option value="General(12-15 days)">
@@ -75,7 +85,7 @@ const WomensPersonalizedLookbook = () => {
                   </option>
                 </select>
               </div>
-              <button className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">
+              <button className="bg-brown-dark w-2/3 text-white p-6 pl-6 pr-6 pt-6 pb-6 rounded-3xl text-lg my-6">
                 Order
               </button>
             </div>

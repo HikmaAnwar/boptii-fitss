@@ -11,7 +11,7 @@ const Home = () => {
           alt="wardrobe img"
           layout="fill"
           objectFit="cover"
-          priority={true} // Preload the image, which can help with hydration issues
+          priority={true}
           className="w-full h-full"
         />
         <div className="absolute inset-0 flex flex-col items-center justify-center pt-28 text-center">
