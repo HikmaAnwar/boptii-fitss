@@ -15,13 +15,13 @@ const Services = () => {
         </div>
       </div>
       <hr className="border-t border-gray-300 mb-12" />
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 max-w-5xl mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-8xl mx-8">
         <Link href="/services/women-personalized-lookbook">
           <div className="text-center">
             <Image
               src="/assets/women-lookbook.jpg"
-              width={500}
-              height={500}
+              width={1454}
+              height={1400}
               alt="Women's Lookbook"
               className="object-cover rounded-sm shadow-sm"
             />
@@ -35,8 +35,8 @@ const Services = () => {
           <div className="text-center">
             <Image
               src="/assets/men-lookbook.jpg"
-              width={500}
-              height={500}
+              width={1454}
+              height={1400}
               alt="Men's Lookbook"
               className="object-cover rounded-sm shadow-sm"
             />
