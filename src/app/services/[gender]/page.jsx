@@ -1,11 +1,11 @@
-// /src/app/services/[gender]/page.js
+"use client";
 
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 
 const PersonalizedLookbook = () => {
   const router = useRouter();
-  const { gender } = router.query; // gender will be 'women' or 'men'
+  const { gender } = router.query;
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -15,13 +15,13 @@ const PersonalizedLookbook = () => {
   }, [gender]);
 
   if (loading) {
-    return <p>Loading...</p>; // Handle loading state or invalid routes
+    return <p>Loading...</p>;
   }
 
   return (
     <div>
       <h1>{gender === "women" ? "Women's" : "Men's"} Personalized Lookbook</h1>
-      {/* Render specific content based on gender */}
+
       {gender === "women" ? (
         <p>This is the women's lookbook content.</p>
       ) : (
