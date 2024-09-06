@@ -3,16 +3,16 @@
 import { useParams } from "next/navigation";
 
 const PersonalizedLookbook = () => {
-  const { gender } = useParams(); // 'gender' will be 'women' or 'men'
+  const { gender } = useParams();
 
   if (!gender) {
-    return <p>Loading...</p>; // Handle loading state or invalid routes
+    return <p>Loading...</p>;
   }
 
   return (
     <div>
       <h1>{gender === "women" ? "Women's" : "Men's"} Personalized Lookbook</h1>
-      {/* Render specific content based on gender */}
+
       {gender === "women" ? (
         <p>This is the women's lookbook content.</p>
       ) : (
