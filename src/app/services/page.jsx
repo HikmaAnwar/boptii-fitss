@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Services = () => {
   return (
-    <div className="bg-white px-4 py-8 sm:py-16 lg:px-8">
+    <div className="bg-white px-4 py-8 sm:py-16 lg:px-8 h-[1000px]">
       <div className="text-center mb-12">
         <h2 className="text-3xl font-semibold text-gray-800 sm:text-4xl">
           Styling Services
