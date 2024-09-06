@@ -16,7 +16,7 @@ const Services = () => {
       </div>
       <hr className="border-t border-gray-300 mb-12" />
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-8xl mx-2">
-        <Link href="/services/women">
+        <Link href="/services/womens-personalized-lookbook">
           <div className="text-center">
             <Image
               src="/assets/women-lookbook.jpg"
@@ -31,7 +31,7 @@ const Services = () => {
             <p className="text-gray-600 text-lg mt-2">from birr 1000.00</p>
           </div>
         </Link>
-        <Link href="/services/men">
+        <Link href="/services/mens-personalized-lookbook">
           <div className="text-center">
             <Image
               src="/assets/men-lookbook.jpg"
