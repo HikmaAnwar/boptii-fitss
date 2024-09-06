@@ -3,8 +3,8 @@ import Link from "next/link";
 
 const Services = () => {
   return (
-    <div className="bg-white px-4 py-8 sm:py-16 lg:px-8 h-[1000px]">
-      <div className="text-center mt-36 mb-12">
+    <div className="bg-white px-4 py-8 sm:py-16 lg:px-8 h-[900px]">
+      <div className="text-center mt-32 mb-12">
         <h2 className="text-3xl font-semibold  text-gray-800 sm:text-4xl">
           Styling Services
         </h2>
@@ -28,7 +28,7 @@ const Services = () => {
             <h3 className="text-xl font-medium text-gray-800 mt-4">
               Women's Personalized Lookbook
             </h3>
-            <p className="text-gray-600 text-lg mt-2">from $150.00</p>
+            <p className="text-gray-600 text-lg mt-2">from birr 1000.00</p>
           </div>
         </Link>
         <Link href="/services/men-personalized-lookbook">
@@ -43,7 +43,7 @@ const Services = () => {
             <h3 className="text-xl font-medium text-gray-800 mt-4">
               Men's Personalized Lookbook
             </h3>
-            <p className="text-gray-600 text-lg mt-2">from $150.00</p>
+            <p className="text-gray-600 text-lg mt-2">from birr 1000.00</p>
           </div>
         </Link>
       </div>
