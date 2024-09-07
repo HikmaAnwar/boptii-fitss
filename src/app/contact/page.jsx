@@ -40,6 +40,14 @@ const Contact = () => {
               <i className="fab fa-linkedin-in"></i>
             </a>
             <a
+              href="https://www.linkedin.com/in/hikma-tsegaye/"
+              target="_blank"
+              className="text-md mx-2 font-bold hover:text-gray-600"
+              aria-label="LinkedIn"
+            >
+              <i className="fab fa-linkedin-in"></i>
+            </a>
+            <a
               href="https://www.instagram.com/boptii/?hl=en"
               target="_blank"
               className="text-md mx-2 font-bold hover:text-gray-600"
