@@ -95,12 +95,8 @@ const Contact = () => {
           </div>
         </div>
 
-        {/* Right Section - Form */}
         <div className="w-full lg:w-1/2 lg:pl-4">
-          <form
-            onSubmit={handleSubmit}
-            className="p-6 bg-white shadow-lg rounded-md"
-          >
+          <form onSubmit={handleSubmit}>
             <div className="mb-4">
               <label
                 className="block text-gray-700 font-bold mb-2"
@@ -202,7 +198,7 @@ const Contact = () => {
 
             <button
               type="submit"
-              className="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600"
+              className="bg-brown-dark text-white font-bold py-6 px-4 rounded"
             >
               Submit
             </button>
