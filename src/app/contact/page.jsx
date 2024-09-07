@@ -94,7 +94,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="w-full lg:w-1/2 lg:pl-4 mt-64">
+        <div className="w-full lg:w-1/2 lg:pl-4 mt-64 mb-10">
           <form onSubmit={handleSubmit}>
             <div className="mb-4">
               <label
@@ -197,7 +197,7 @@ const Contact = () => {
 
             <button
               type="submit"
-              className="bg-brown-dark text-white font-bold py-6 px-4 rounded"
+              className="bg-brown-dark text-white font-bold py-4 px-6 my-4 rounded-3xl"
             >
               Submit
             </button>
