@@ -32,7 +32,7 @@ const Contact = () => {
               boptii
             </Link>
           </div>
-          <div className="text-xl justify-start mt-6">
+          <div className="text-xl justify-start mt-6 mb-4">
             <a
               href="https://www.tiktok.com/@itsbopti?lang=en"
               target="_blank"
