@@ -98,7 +98,7 @@ const Contact = () => {
           <form onSubmit={handleSubmit}>
             <div className="mb-4">
               <label
-                className="block text-gray-700 font-bold mb-2"
+                className="block text-brown-dark font-bold mb-2"
                 htmlFor="firstName"
               >
                 First Name
@@ -109,7 +109,7 @@ const Contact = () => {
                 name="firstName"
                 value={formData.firstName}
                 onChange={handleChange}
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-2/3 px-3 py-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-beige-dark"
               />
               {errors.firstName && (
                 <p className="text-red-500 text-sm">{errors.firstName}</p>
@@ -118,7 +118,7 @@ const Contact = () => {
 
             <div className="mb-4">
               <label
-                className="block text-gray-700 font-bold mb-2"
+                className="block text-brown-dark font-bold mb-2"
                 htmlFor="lastName"
               >
                 Last Name
@@ -129,7 +129,7 @@ const Contact = () => {
                 name="lastName"
                 value={formData.lastName}
                 onChange={handleChange}
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-2/3 px-3 py-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
               {errors.lastName && (
                 <p className="text-red-500 text-sm">{errors.lastName}</p>
@@ -138,7 +138,7 @@ const Contact = () => {
 
             <div className="mb-4">
               <label
-                className="block text-gray-700 font-bold mb-2"
+                className="block text-brown-dark font-bold mb-2"
                 htmlFor="email"
               >
                 Email
@@ -149,7 +149,7 @@ const Contact = () => {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-2/3 px-3 py-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
               {errors.email && (
                 <p className="text-red-500 text-sm">{errors.email}</p>
@@ -158,7 +158,7 @@ const Contact = () => {
 
             <div className="mb-4">
               <label
-                className="block text-gray-700 font-bold mb-2"
+                className="block text-brown-dark font-bold mb-2"
                 htmlFor="subject"
               >
                 Subject
@@ -169,7 +169,7 @@ const Contact = () => {
                 name="subject"
                 value={formData.subject}
                 onChange={handleChange}
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-2/3 px-3 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
               {errors.subject && (
                 <p className="text-red-500 text-sm">{errors.subject}</p>
@@ -178,7 +178,7 @@ const Contact = () => {
 
             <div className="mb-4">
               <label
-                className="block text-gray-700 font-bold mb-2"
+                className="block text-brown-dark font-bold mb-2"
                 htmlFor="message"
               >
                 Message
@@ -188,7 +188,7 @@ const Contact = () => {
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-2/3 px-3 py-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
               ></textarea>
               {errors.message && (
                 <p className="text-red-500 text-sm">{errors.message}</p>
