@@ -3,11 +3,11 @@ import { useState } from "react";
 import { useParams } from "next/navigation";
 
 const CartPage = () => {
-  const router = useRouter();
+  const params = useParams();
   const [cartItems, setCartItems] = useState([]);
 
   const handleContinueShopping = () => {
-    router.push("/services");
+    params.push("/services");
   };
 
   return (
