@@ -42,7 +42,6 @@ const Contact = () => {
   return (
     <div className="bg-white">
       <div className="flex flex-col lg:flex-row">
-        {/* Left Section */}
         <div className="mt-56 ml-10 font-serif text-black w-1/2">
           <h1 className="text-black text-5xl mb-10">Contact Us</h1>
           <p className="text-lg mb-10 text-gray-700">
@@ -95,7 +94,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="w-full lg:w-1/2 lg:pl-4">
+        <div className="w-full lg:w-1/2 lg:pl-4 mt-64">
           <form onSubmit={handleSubmit}>
             <div className="mb-4">
               <label
