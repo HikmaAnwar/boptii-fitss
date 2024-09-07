@@ -1,6 +1,8 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTiktok } from "@fortawesome/free-brands-svg-icons";
 
 const Contact = () => {
   return (
@@ -32,12 +34,12 @@ const Contact = () => {
           </div>
           <div className="w-1/3 flex text-xl justify-start mt-6">
             <a
-              href="https://www.linkedin.com/in/hikma-tsegaye/"
+              href="https://www.tiktok.com/@itsbopti?lang=en"
               target="_blank"
               className="text-md mx-2 font-bold hover:text-gray-600"
-              aria-label="LinkedIn"
+              aria-label="Tiktok"
             >
-              <i className="fab fa-linkedin-in"></i>
+              <FontAwesomeIcon icon={faTiktok} />
             </a>
             <a
               href="https://www.linkedin.com/in/hikma-tsegaye/"

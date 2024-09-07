@@ -1,5 +1,7 @@
 import React from "react";
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTiktok } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
   return (
@@ -10,6 +12,14 @@ const Footer = () => {
         </div>
 
         <div className="w-1/3 flex text-xl justify-center">
+          <a
+            href="https://www.tiktok.com/@itsbopti?lang=en"
+            target="_blank"
+            className="text-md mx-2 font-bold hover:text-gray-600"
+            aria-label="Tiktok"
+          >
+            <FontAwesomeIcon icon={faTiktok} />
+          </a>
           <a
             href="https://www.linkedin.com/in/hikma-tsegaye/"
             target="_blank"
