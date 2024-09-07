@@ -14,8 +14,8 @@ const Contact = () => {
             If you have any questions or comments, please contact us via email,
             instagram DM, or send us a message using the contact form.
           </p>
-          <div className="text-black text-lg py-2">
-            <h3>Email</h3>
+          <div className="text-black  text-lg py-2">
+            <h3 className="font-semibold">Email</h3>
             <Link
               href="https://mailto/management@boptifits.com"
               target="_blank"
@@ -23,7 +23,7 @@ const Contact = () => {
             >
               management@boptifits.com
             </Link>
-            <h3 className="mt-8">Instagram</h3>
+            <h3 className="mt-8 font-semibold">Instagram</h3>
             <Link
               href="https://www.instagram.com/boptii/?hl=en"
               target="_blank"
@@ -32,7 +32,7 @@ const Contact = () => {
               boptii
             </Link>
           </div>
-          <div className="w-1/3 flex text-xl justify-start mt-6">
+          <div className="text-xl justify-start mt-6">
             <a
               href="https://www.tiktok.com/@itsbopti?lang=en"
               target="_blank"
