@@ -42,7 +42,7 @@ const Contact = () => {
   return (
     <div className="bg-white">
       <div className="flex flex-col lg:flex-row">
-        <div className="mt-10 lg:mt-56 mx-4 lg:mx-10 font-serif text-black lg:w-1/2">
+        <div className="mt-44 lg:mt-56 mx-4 lg:mx-10 font-serif text-black lg:w-1/2">
           <h1 className="text-black text-4xl lg:text-5xl mb-6 lg:mb-10">
             Contact Us
           </h1>
