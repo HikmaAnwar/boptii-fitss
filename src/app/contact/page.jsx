@@ -42,9 +42,11 @@ const Contact = () => {
   return (
     <div className="bg-white">
       <div className="flex flex-col lg:flex-row">
-        <div className="mt-56 ml-10 font-serif text-black w-1/2">
-          <h1 className="text-black text-5xl mb-10">Contact Us</h1>
-          <p className="text-lg mb-10 text-gray-700">
+        <div className="mt-10 lg:mt-56 mx-4 lg:mx-10 font-serif text-black lg:w-1/2">
+          <h1 className="text-black text-4xl lg:text-5xl mb-6 lg:mb-10">
+            Contact Us
+          </h1>
+          <p className="text-lg mb-6 lg:mb-10 text-gray-700">
             If you have any questions or comments, please contact us via email,
             Instagram DM, or send us a message using the contact form.
           </p>
@@ -94,7 +96,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="w-full lg:w-1/2 lg:pl-4 mt-64 mb-10">
+        <div className="w-full lg:w-1/2 lg:pl-4 mt-10 lg:mt-64 mb-10 px-4 lg:px-0">
           <form onSubmit={handleSubmit}>
             <div className="mb-4">
               <label
@@ -109,7 +111,7 @@ const Contact = () => {
                 name="firstName"
                 value={formData.firstName}
                 onChange={handleChange}
-                className="w-2/3 px-3 py-4 text-gray-700 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-beige-dark"
+                className="w-full lg:w-2/3 px-3 py-4 text-gray-700 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-beige-dark"
               />
               {errors.firstName && (
                 <p className="text-red-500 text-sm">{errors.firstName}</p>
@@ -129,7 +131,7 @@ const Contact = () => {
                 name="lastName"
                 value={formData.lastName}
                 onChange={handleChange}
-                className="w-2/3 px-3 py-4 text-gray-700 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-beige-dark"
+                className="w-full lg:w-2/3 px-3 py-4 text-gray-700 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-beige-dark"
               />
               {errors.lastName && (
                 <p className="text-red-500 text-sm">{errors.lastName}</p>
@@ -149,7 +151,7 @@ const Contact = () => {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                className="w-2/3 px-3 py-4 text-gray-700 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-beige-dark"
+                className="w-full lg:w-2/3 px-3 py-4 text-gray-700 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-beige-dark"
               />
               {errors.email && (
                 <p className="text-red-500 text-sm">{errors.email}</p>
@@ -169,7 +171,7 @@ const Contact = () => {
                 name="subject"
                 value={formData.subject}
                 onChange={handleChange}
-                className="w-2/3 px-3 py-3 text-gray-700 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-beige-dark"
+                className="w-full lg:w-2/3 px-3 py-3 text-gray-700 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-beige-dark"
               />
               {errors.subject && (
                 <p className="text-red-500 text-sm">{errors.subject}</p>
@@ -188,7 +190,7 @@ const Contact = () => {
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
-                className="w-2/3 px-3 py-4 text-gray-700 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-beige-dark"
+                className="w-full lg:w-2/3 px-3 py-4 text-gray-700 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-beige-dark"
               ></textarea>
               {errors.message && (
                 <p className="text-red-500 text-sm">{errors.message}</p>
