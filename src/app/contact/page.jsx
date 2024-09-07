@@ -199,7 +199,7 @@ const Contact = () => {
 
             <button
               type="submit"
-              className="bg-brown-dark text-white font-bold py-4 px-6 my-4 rounded-3xl"
+              className="bg-brown-dark text-white font-serif text-lg py-4 px-6 my-4 rounded-3xl"
             >
               Submit
             </button>

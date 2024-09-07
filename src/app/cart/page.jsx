@@ -12,7 +12,9 @@ const CartPage = () => {
 
   return (
     <div className="container mx-auto py-8">
-      <h1 className="text-3xl font-bold mb-4">Shopping Cart</h1>
+      <h1 className="text-3xl text-black mt-48 font-serif ml-8 mb-4">
+        Shopping Cart
+      </h1>
       {cartItems.length > 0 ? (
         <div>
           <ul className="space-y-4">
@@ -26,11 +28,11 @@ const CartPage = () => {
           </ul>
         </div>
       ) : (
-        <div className="text-center py-8">
-          <p className="text-xl">You have nothing in your shopping cart.</p>
+        <div className="text-gray-700 px-8 py-4 font-serif">
+          <p className="text-lg">You have nothing in your shopping cart.</p>
           <button
             onClick={handleContinueShopping}
-            className="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition"
+            className="mt-4 bg-brown-dark text-white text-lg py-4 px-6 my-4 rounded-3xl hover:bg-brown-light transition"
           >
             Continue Shopping
           </button>
