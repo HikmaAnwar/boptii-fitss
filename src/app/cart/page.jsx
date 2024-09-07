@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { useParams } from "next/navigation";
+import Link from "next/link";
 
 const CartPage = () => {
   const params = useParams();
@@ -30,12 +31,14 @@ const CartPage = () => {
       ) : (
         <div className="text-gray-700 px-4 sm:px-8 py-4 font-serif">
           <p className="text-lg">You have nothing in your shopping cart.</p>
-          <button
-            onClick={handleContinueShopping}
-            className="mt-4 bg-brown-dark text-white text-lg py-3 px-4 sm:py-4 sm:px-6 rounded-xl hover:bg-brown-light transition"
-          >
-            Continue Shopping
-          </button>
+          <Link href="/services">
+            <button
+              onClick={handleContinueShopping}
+              className="mt-4 bg-brown-dark text-white text-lg py-3 px-4 sm:py-4 sm:px-6 rounded-xl"
+            >
+              Continue Shopping
+            </button>
+          </Link>
         </div>
       )}
     </div>
