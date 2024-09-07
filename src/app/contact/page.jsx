@@ -10,7 +10,7 @@ const Contact = () => {
       <div className=" flex flex-col lg:flex-row">
         <div className="mt-56 ml-10  font-serif text-black w-1/2">
           <h1 className="text-black text-5xl mb-10">Contact Us</h1>
-          <p className="text-lg mb-6 text-gray-700">
+          <p className="text-lg mb-10 text-gray-700">
             If you have any questions or comments, please contact us via email,
             instagram DM, or send us a message using the contact form.
           </p>
