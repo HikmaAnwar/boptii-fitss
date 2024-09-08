@@ -122,11 +122,9 @@ const WomensPersonalizedLookbook = () => {
         </div>
       </div>
 
-      {/* Modal */}
       {isModalOpen && (
         <div className="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center z-50">
           <div className="bg-white p-8 rounded-lg shadow-lg max-w-md w-full relative">
-            {/* Close button */}
             <button
               onClick={closeModal}
               className="absolute top-2 right-2 text-gray-500 hover:text-gray-800"
@@ -134,29 +132,63 @@ const WomensPersonalizedLookbook = () => {
               &times;
             </button>
 
-            {/* Quiz Content */}
-            <h2 className="text-xl font-bold mb-4">Style Quiz</h2>
+            <h2 className="text-xl text-black font-serif mb-4">
+              WOMEN STYLE QUIZ
+            </h2>
             <form>
               <div className="mb-4">
-                <label className="block text-gray-700 mb-2">Question 1</label>
+                <label className="block text-black mb-2">First Name: </label>
                 <input
                   type="text"
-                  className="w-full p-2 border rounded-lg"
-                  placeholder="Your answer"
+                  className="w-full text-gray-700 p-2 border rounded-sm border-black"
                 />
               </div>
               <div className="mb-4">
-                <label className="block text-gray-700 mb-2">Question 2</label>
+                <label className="block text-black mb-2">Last Name:</label>
                 <input
                   type="text"
-                  className="w-full p-2 border rounded-lg"
-                  placeholder="Your answer"
+                  className="w-full text-gray-700 p-2 border rounded-sm border-black"
+                />
+              </div>
+              <div className="mb-4">
+                <label className="block text-black mb-2">Age: </label>
+                <input
+                  type="text"
+                  className="w-full text-gray-700 p-2 border rounded-sm border-black"
+                />
+              </div>
+              <div className="mb-4">
+                <label className="block text-black mb-2">Height: </label>
+                <input
+                  type="text"
+                  className="w-full text-gray-700 p-2 border rounded-sm border-black"
+                />
+              </div>
+              <div className="mb-4">
+                <label className="block text-black mb-2">
+                  Country of Residence:
+                </label>
+                <input
+                  type="text"
+                  className="w-full text-gray-700 p-2 border rounded-sm border-black"
+                />
+              </div>
+              <div className="mb-4">
+                <label className="block text-black mb-2">
+                  Instagram:{" "}
+                  <p className="text-gray-500">
+                    Give your stylist a better feel of your style/aesthetic
+                  </p>
+                </label>
+                <input
+                  type="text"
+                  className="w-full text-gray-700 p-2 border rounded-sm border-black"
                 />
               </div>
               <div className="flex justify-end">
                 <button
                   type="submit"
-                  className="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-700"
+                  className="bg-brown-dark text-white py-2 px-4 rounded-lg hover:bg-beige-dark"
                 >
                   Submit Quiz
                 </button>
