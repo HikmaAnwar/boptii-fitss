@@ -5,13 +5,24 @@ import Link from "next/link";
 const WomensPersonalizedLookbook = () => {
   const [clientRender, setClientRender] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const [outfitCount, setOutfitCount] = useState("");
+  const [deliveryTime, setDeliveryTime] = useState("");
 
   useEffect(() => {
     setClientRender(true);
   }, []);
 
-  const openModal = () => setIsModalOpen(true);
+  const openModal = () => {
+    if (!outfitCount || !deliveryTime) {
+      setIsPopupOpen(true); // Show the pop-up if options are not selected
+    } else {
+      setIsModalOpen(true); // Show the modal if options are selected
+    }
+  };
+
   const closeModal = () => setIsModalOpen(false);
+  const closePopup = () => setIsPopupOpen(false);
 
   return (
     <>
@@ -67,7 +78,11 @@ const WomensPersonalizedLookbook = () => {
                 >
                   Number of Outfits:
                 </label>
-                <select className="w-full sm:w-2/3 p-4 mb-4 text-black border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-colors-broken-white">
+                <select
+                  className="w-full sm:w-2/3 p-4 mb-4 text-black border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-colors-broken-white"
+                  value={outfitCount}
+                  onChange={(e) => setOutfitCount(e.target.value)}
+                >
                   <option value="">Select number of outfits</option>
                   <option value="3">3</option>
                   <option value="4">4</option>
@@ -75,13 +90,18 @@ const WomensPersonalizedLookbook = () => {
                   <option value="6">6</option>
                   <option value="7">7</option>
                 </select>
+
                 <label
                   htmlFor="Delivery time"
                   className="block text-md font-serif text-gray-800"
                 >
                   Delivery Time:
                 </label>
-                <select className="w-full sm:w-2/3 p-4 text-black border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-colors-broken-white">
+                <select
+                  className="w-full sm:w-2/3 p-4 text-black border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-colors-broken-white"
+                  value={deliveryTime}
+                  onChange={(e) => setDeliveryTime(e.target.value)}
+                >
                   <option value="">Select Delivery Time</option>
                   <option value="Priority(5-7 days)">Priority(5-7 days)</option>
                   <option value="General(12-15 days)">
@@ -90,6 +110,7 @@ const WomensPersonalizedLookbook = () => {
                 </select>
               </div>
 
+              {/* Button to open the modal */}
               <button
                 onClick={openModal}
                 className="bg-brown-dark w-full sm:w-2/3 text-white p-6 rounded-3xl text-lg my-6"
@@ -101,9 +122,11 @@ const WomensPersonalizedLookbook = () => {
         </div>
       </div>
 
+      {/* Modal */}
       {isModalOpen && (
         <div className="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center z-50">
           <div className="bg-white p-8 rounded-lg shadow-lg max-w-md w-full relative">
+            {/* Close button */}
             <button
               onClick={closeModal}
               className="absolute top-2 right-2 text-gray-500 hover:text-gray-800"
@@ -111,6 +134,7 @@ const WomensPersonalizedLookbook = () => {
               &times;
             </button>
 
+            {/* Quiz Content */}
             <h2 className="text-xl font-bold mb-4">Style Quiz</h2>
             <form>
               <div className="mb-4">
@@ -132,12 +156,41 @@ const WomensPersonalizedLookbook = () => {
               <div className="flex justify-end">
                 <button
                   type="submit"
-                  className="bg-brown-dark text-white py-2 px-4 rounded-lg hover:bg-brown-light"
+                  className="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-700"
                 >
                   Submit Quiz
                 </button>
               </div>
             </form>
+          </div>
+        </div>
+      )}
+
+      {/* Popup Message */}
+      {isPopupOpen && (
+        <div className="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center z-50">
+          <div className="bg-white p-8 rounded-lg shadow-lg max-w-md w-full relative">
+            {/* Close button for the popup */}
+            <button
+              onClick={closePopup}
+              className="absolute top-2 right-2 text-gray-500 hover:text-gray-800"
+            >
+              &times;
+            </button>
+
+            {/* Popup content */}
+            <h2 className="text-xl font-bold mb-4">Unable to Purchase Item</h2>
+            <p className="text-gray-800">
+              Please select the # of Outfits and Delivery Time options.
+            </p>
+            <div className="flex justify-end mt-4">
+              <button
+                onClick={closePopup}
+                className="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-700"
+              >
+                OK
+              </button>
+            </div>
           </div>
         </div>
       )}
