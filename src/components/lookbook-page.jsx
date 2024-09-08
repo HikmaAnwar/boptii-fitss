@@ -166,29 +166,28 @@ const WomensPersonalizedLookbook = () => {
         </div>
       )}
 
-      {/* Popup Message */}
       {isPopupOpen && (
         <div className="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center z-50">
           <div className="bg-white p-8 rounded-lg shadow-lg max-w-md w-full relative">
-            {/* Close button for the popup */}
             <button
               onClick={closePopup}
-              className="absolute top-2 right-2 text-gray-500 hover:text-gray-800"
+              className="absolute top-2 right-2 text-xl text-gray-500 hover:text-gray-800"
             >
               &times;
             </button>
 
-            {/* Popup content */}
-            <h2 className="text-xl font-bold mb-4">Unable to Purchase Item</h2>
-            <p className="text-gray-800">
-              Please select the # of Outfits and Delivery Time options.
+            <h2 className="text-xl text-gray-800 font-serif flex justify-center items-center mb-4">
+              Unable to Purchase Item
+            </h2>
+            <p className="text-gray-800 ml-4 font-serif">
+              Please select the no of Outfits and Delivery Time options.
             </p>
-            <div className="flex justify-end mt-4">
+            <div className="flex justify-center mt-4">
               <button
                 onClick={closePopup}
-                className="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-700"
+                className="bg-beige-dark text-white py-2 px-4 rounded-lg hover:bg-beige-light"
               >
-                OK
+                Okay
               </button>
             </div>
           </div>
