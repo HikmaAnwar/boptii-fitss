@@ -185,9 +185,9 @@ const WomensPersonalizedLookbook = () => {
             <div className="flex justify-center mt-4">
               <button
                 onClick={closePopup}
-                className="bg-beige-dark text-white py-2 px-4 rounded-lg hover:bg-beige-light"
+                className="bg-beige-dark text-sm text-black py-2 px-4 rounded-lg hover:bg-beige-light"
               >
-                Okay
+                OKAY
               </button>
             </div>
           </div>
