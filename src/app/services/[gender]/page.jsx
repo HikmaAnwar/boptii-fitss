@@ -10,6 +10,7 @@ const PersonalizedLookbook = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
   const [outfitCount, setOutfitCount] = useState("");
   const [deliveryTime, setDeliveryTime] = useState("");
+  const [colors, setColors] = useState("");
 
   const openModal = () => {
     if (!outfitCount || !deliveryTime) {
@@ -24,6 +25,10 @@ const PersonalizedLookbook = () => {
 
   const handleDeliveryTimeChange = (e) => {
     setDeliveryTime(e.target.value);
+  };
+
+  const handleColorChange = (e) => {
+    setColors(e.target.value);
   };
 
   const closeModal = () => setIsModalOpen(false);
@@ -248,6 +253,9 @@ const PersonalizedLookbook = () => {
               <div className="mb-4">
                 <input type="checkbox" className="mr-2" value="catagory" />
                 <label className="text-gray-700">vacation/ swim Wear</label>
+              </div>
+              <div className="mb-4">
+                <label className="text-black"></label>
               </div>
 
               <div className="flex justify-end">
