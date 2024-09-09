@@ -196,6 +196,60 @@ const PersonalizedLookbook = () => {
                   className="w-full text-gray-700 p-2 border rounded-sm border-black"
                 />
               </div>
+              <div className="mb-4">
+                <label className="block text-black mb-2">
+                  Give us an idea of who your fashion icon is:
+                </label>
+                <input
+                  type="text"
+                  className="w-full text-gray-700 p-2 border rounded-sm border-black"
+                />
+              </div>
+
+              <div className="mb-4">
+                <label className="block text-black mb-2">
+                  Feel free to mention some of your favorite brands to shop
+                  from:
+                </label>
+                <textarea
+                  type="message"
+                  placeholder="nike, revolve. ssense, rick owens, dior, farfetch etc"
+                  className="w-full lg:w-2/3 px-3 py-4 text-gray-700 border  border-black rounded-sm  "
+                />
+              </div>
+              <div className="mb-2">
+                <label className="block text-black mb-2">
+                  Please select the categories of outfits you would like to see
+                  in your lookbook: *
+                </label>
+                <input type="checkbox" className="mr-2" value="catagory" />
+                <label className="text-gray-700">Lounge Wear</label>
+              </div>
+              <div className="mb-2">
+                <input type="checkbox" className="mr-2" value="catagory" />
+                <label className="text-gray-700">Casual Wear</label>
+              </div>
+              <div className="mb-2">
+                <input type="checkbox" className="mr-2" value="catagory" />
+                <label className="text-gray-700">Street Wear</label>
+              </div>
+              <div className="mb-2">
+                <input type="checkbox" className="mr-2" value="catagory" />
+                <label className="text-gray-700"> Outer Wear</label>
+              </div>
+              <div className="mb-2">
+                <input type="checkbox" className="mr-2" value="catagory" />
+                <label className="text-gray-700"> party Wear</label>
+              </div>
+              <div className="mb-2">
+                <input type="checkbox" className="mr-2" value="catagory" />
+                <label className="text-gray-700">formal Wear</label>
+              </div>
+              <div className="mb-4">
+                <input type="checkbox" className="mr-2" value="catagory" />
+                <label className="text-gray-700">vacation/ swim Wear</label>
+              </div>
+
               <div className="flex justify-end">
                 <button
                   type="submit"
