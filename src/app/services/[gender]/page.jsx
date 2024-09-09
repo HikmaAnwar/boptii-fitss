@@ -313,26 +313,25 @@ const PersonalizedLookbook = () => {
               </div>
               <div className="mb-2">
                 <label className="block text-black mb-2">
-                  What is your ideal price range of shoes to be styled in? *
+                  What is your ideal price range to be styled in? *
                   <p className="text-sm text-gray-500">
-                    {" "}
                     You may select more than one
                   </p>
                 </label>
                 <input type="checkbox" className="mr-2" value="catagory" />
-                <label className="text-gray-700">Lounge Wear</label>
+                <label className="text-gray-700"> 100-250 birr</label>
               </div>
               <div className="mb-2">
                 <input type="checkbox" className="mr-2" value="catagory" />
-                <label className="text-gray-700">Casual Wear</label>
+                <label className="text-gray-700"> 300-500 birr</label>
               </div>
               <div className="mb-2">
                 <input type="checkbox" className="mr-2" value="catagory" />
-                <label className="text-gray-700">Street Wear</label>
+                <label className="text-gray-700"> 500-1000 birr</label>
               </div>
               <div className="mb-2">
                 <input type="checkbox" className="mr-2" value="catagory" />
-                <label className="text-gray-700"> Outer Wear</label>
+                <label className="text-gray-700">1000+ birr</label>
               </div>
               <div className="mb-2">
                 <input type="checkbox" className="mr-2" value="catagory" />
