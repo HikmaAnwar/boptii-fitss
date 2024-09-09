@@ -11,6 +11,7 @@ const PersonalizedLookbook = () => {
   const [outfitCount, setOutfitCount] = useState("");
   const [deliveryTime, setDeliveryTime] = useState("");
   const [colors, setColors] = useState("");
+  const [answers, setAnswers] = useState("");
 
   const openModal = () => {
     if (!outfitCount || !deliveryTime) {
@@ -29,6 +30,9 @@ const PersonalizedLookbook = () => {
 
   const handleColorChange = (e) => {
     setColors(e.target.value);
+  };
+  const handleAnswerChange = (e) => {
+    setAnswers(e.target.value);
   };
 
   const closeModal = () => setIsModalOpen(false);
@@ -255,7 +259,88 @@ const PersonalizedLookbook = () => {
                 <label className="text-gray-700">vacation/ swim Wear</label>
               </div>
               <div className="mb-4">
-                <label className="text-black"></label>
+                <label className="text-black ">
+                  What colors do you usually like to wear? *
+                </label>
+                <select
+                  value={colors}
+                  onChange={handleColorChange}
+                  className="text-gray-700 mt-3 border border-black py-1 px-1"
+                >
+                  <option value="Neutral"> Neutral</option>
+                  <option value="colorful">colorful</option>
+                  <option value=" A little bit of both">
+                    A little bit of both
+                  </option>
+                </select>
+              </div>
+              <div className="mb-2">
+                <label className="block text-black mb-2">
+                  What is your go to shoe? *
+                  <p className="text-gray-500 text-sm">
+                    You may select more than one
+                  </p>
+                </label>
+                <input type="checkbox" className="mr-2" value="catagory" />
+                <label className="text-gray-700">Slides</label>
+              </div>
+              <div className="mb-2">
+                <input type="checkbox" className="mr-2" value="catagory" />
+                <label className="text-gray-700">Sneakers</label>
+              </div>
+              <div className="mb-2">
+                <input type="checkbox" className="mr-2" value="catagory" />
+                <label className="text-gray-700">Boots</label>
+              </div>
+              <div className="mb-2">
+                <input type="checkbox" className="mr-2" value="catagory" />
+                <label className="text-gray-700">Heals</label>
+              </div>
+              <div className="mb-4">
+                <label className="text-black ">
+                  Are you interested in having high-end designer items in your
+                  lookbook? *
+                </label>
+                <select
+                  value={answers}
+                  onChange={handleAnswerChange}
+                  className="text-gray-700 flex flex-col mt-3 border border-black "
+                >
+                  <option value="yes">Yes</option>
+                  <option value="No">No</option>
+                  <option value="Maybe">Maybe</option>
+                </select>
+              </div>
+              <div className="mb-2">
+                <label className="block text-black mb-2">
+                  What is your ideal price range of shoes to be styled in? *
+                  <p className="text-sm text-gray-500">
+                    {" "}
+                    You may select more than one
+                  </p>
+                </label>
+                <input type="checkbox" className="mr-2" value="catagory" />
+                <label className="text-gray-700">Lounge Wear</label>
+              </div>
+              <div className="mb-2">
+                <input type="checkbox" className="mr-2" value="catagory" />
+                <label className="text-gray-700">Casual Wear</label>
+              </div>
+              <div className="mb-2">
+                <input type="checkbox" className="mr-2" value="catagory" />
+                <label className="text-gray-700">Street Wear</label>
+              </div>
+              <div className="mb-2">
+                <input type="checkbox" className="mr-2" value="catagory" />
+                <label className="text-gray-700"> Outer Wear</label>
+              </div>
+              <div className="mb-2">
+                <input type="checkbox" className="mr-2" value="catagory" />
+                <label className="text-gray-700"> party Wear</label>
+              </div>
+              <div className="mb-2">
+                <input type="checkbox" className="mr-2" value="catagory" />
+                <label className="text-gray-700">formal Wear</label>
               </div>
 
               <div className="flex justify-end">
