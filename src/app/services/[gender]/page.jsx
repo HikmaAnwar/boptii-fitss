@@ -333,6 +333,13 @@ const PersonalizedLookbook = () => {
                 <input type="checkbox" className="mr-2" value="catagory" />
                 <label className="text-gray-700 ml-1">1000+ birr</label>
               </div>
+              <div className="mb-2">
+                <input type="text" />
+                <label className="text-gray-700 ml-1">
+                  Please enter the email you would like your Lookbook to be
+                  delivered to: *
+                </label>
+              </div>
 
               <div className="flex justify-end">
                 <button
