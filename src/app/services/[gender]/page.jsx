@@ -331,15 +331,7 @@ const PersonalizedLookbook = () => {
               </div>
               <div className="mb-2">
                 <input type="checkbox" className="mr-2" value="catagory" />
-                <label className="text-gray-700">1000+ birr</label>
-              </div>
-              <div className="mb-2">
-                <input type="checkbox" className="mr-2" value="catagory" />
-                <label className="text-gray-700"> party Wear</label>
-              </div>
-              <div className="mb-2">
-                <input type="checkbox" className="mr-2" value="catagory" />
-                <label className="text-gray-700">formal Wear</label>
+                <label className="text-gray-700 ml-1">1000+ birr</label>
               </div>
 
               <div className="flex justify-end">
