@@ -338,6 +338,9 @@ const PersonalizedLookbook = () => {
                 <label className="text-gray-700 ml-1">
                   Please enter the email you would like your Lookbook to be
                   delivered to: *
+                  <p className="text-sm text-gray-500">
+                    All lookbooks are delivered via email
+                  </p>
                 </label>
               </div>
 
