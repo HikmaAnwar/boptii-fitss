@@ -7,7 +7,7 @@ const Home = () => {
     <div className="bg-white">
       <div className="relative h-screen w-full">
         <Image
-          src="/assets/wardrobe.jpg"
+          src="/assets/wardrobe2.jpg"
           alt="wardrobe img"
           layout="fill"
           objectFit="cover"
