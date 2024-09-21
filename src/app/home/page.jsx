@@ -42,11 +42,11 @@ const Home = () => {
             width={1500}
             height={2000}
           />
-          <div className="absolute inset-0 flex flex-col items-center justify-center mt-4 pb-24">
+          <div className="absolute inset-0 flex flex-col items-center justify-center pt-24 mt-4 pb-24">
             <p className="italic font-semibold font-serif text-black text-4xl mb-16 pb-14">
               HOW IT WORKS
             </p>
-            <div className="flex space-x-4">
+            <div className="flex space-x-4 pb-4">
               <div className="bg-colors-broken-white p-4 rounded-lg shadow-lg max-w-md flex-1">
                 <h3 className="text-xl text-center text-black font-serif items-center font-semibold">
                   STEP 1: STYLE QUIZ & PAYMENT
@@ -81,7 +81,7 @@ const Home = () => {
                 </p>
               </div>
             </div>
-            <Link href="/services">
+            <Link className="pt-6" href="/services">
               <button className="bg-brown-dark text-white p-3 pl-6 pr-6 pt-4 pb-4 rounded-3xl text-md my-6">
                 Get Styled
               </button>
