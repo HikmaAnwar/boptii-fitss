@@ -48,7 +48,9 @@ const PersonalizedLookbook = () => {
         <div className="container mx-auto px-4 py-6 mt-24 mb-12">
           <div className="text-lg font-normal text-gray-700 mb-6">
             <Link href="/services">Styling Services</Link> &gt;
-            <Link href="/services/men">{gender}'s Personalized Lookbook</Link>
+            <Link href="/services/men">
+              {gender}&apos;s Personalized Lookbook
+            </Link>
           </div>
 
           <div className="flex flex-col lg:flex-row">
@@ -67,7 +69,7 @@ const PersonalizedLookbook = () => {
             </div>
             <div className="lg:w-1/2 lg:pl-4">
               <h1 className="text-black text-3xl sm:text-4xl lg:text-5xl font-serif mb-4">
-                {gender}'s Personalized Lookbook
+                {gender}&apos;s Personalized Lookbook
               </h1>
               <p className="text-black text-lg sm:text-xl mb-12 font-serif">
                 from birr 1000.00
