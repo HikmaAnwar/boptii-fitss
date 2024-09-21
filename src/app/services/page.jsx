@@ -26,7 +26,7 @@ const Services = () => {
               className="object-cover rounded-sm shadow-sm"
             />
             <h3 className="text-xl font-medium text-gray-800 mt-4">
-              Women's Personalized Lookbook
+              Women&rsquo;s Personalized Lookbook
             </h3>
             <p className="text-gray-600 text-lg mt-2">from birr 1000.00</p>
           </div>
@@ -41,7 +41,7 @@ const Services = () => {
               className="object-cover rounded-sm shadow-sm"
             />
             <h3 className="text-xl font-medium text-gray-800 mt-4">
-              Men's Personalized Lookbook
+              Men&rsquo;s Personalized Lookbook
             </h3>
             <p className="text-gray-600 text-lg mt-2">from birr 1000.00</p>
           </div>
