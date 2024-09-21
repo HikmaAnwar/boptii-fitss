@@ -14,7 +14,7 @@ const Home = () => {
           priority={true}
           className="w-full h-full"
         />
-        <div className="absolute inset-0 flex flex-col items-center justify-center pt-28 text-center">
+        <div className="absolute inset-0 flex flex-col items-center justify-center pt-44 text-center">
           <p className="text-black font-bold text-4xl font-serif mt-8 mb-6">
             VIRTUAL WARDROBE STYLING
           </p>
