@@ -10,7 +10,7 @@ const NavBar = ({ cartItemCount }) => {
   const router = useRouter();
 
   return (
-    <nav className="fixed p-10 top-0 left-0 w-full z-10 bg-colors-broken-white  shadow-md transition-all duration-300">
+    <nav className="fixed p-10 top-0 left-0 w-full z-10 bg-colors-broken-white bg-opacity-70 shadow-md transition-all duration-300">
       <div className="flex justify-between items-center p-0.5 text-black mx-auto w-full h-20">
         <div className="text-gray-900 font-bold font-serif text-3xl">
           <Link href="/">BOPTII FITS</Link>
