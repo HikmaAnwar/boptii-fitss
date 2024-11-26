@@ -46,9 +46,9 @@ const Home = () => {
             <p className="italic font-semibold font-serif text-black text-4xl mb-16 pb-14">
               HOW IT WORKS
             </p>
-            <div className="flex space-x-4 pb-4">
-              <div className="bg-colors-broken-white p-4 rounded-lg shadow-lg max-w-md flex-1">
-                <h3 className="text-xl text-center text-black font-serif items-center font-semibold">
+            <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 pb-4">
+              <div className="bg-colors-broken-white p-4 rounded-lg shadow-lg flex-1">
+                <h3 className="text-xl text-center text-black font-serif font-semibold">
                   STEP 1: STYLE QUIZ & PAYMENT
                 </h3>
                 <p className="mt-2 text-center text-black font-san">
@@ -58,7 +58,7 @@ const Home = () => {
                   your cart to check out and place your order.
                 </p>
               </div>
-              <div className="bg-colors-broken-white p-4 rounded-lg shadow-lg max-w-sm flex-1">
+              <div className="bg-colors-broken-white p-4 rounded-lg shadow-lg flex-1">
                 <h3 className="text-xl text-center text-black font-serif font-semibold">
                   STEP 2: WAITING PERIOD
                 </h3>
@@ -66,10 +66,10 @@ const Home = () => {
                   Once your order is processed, you may email us inspo pictures
                   or products you already own that you would like to see styled
                   in your lookbook. Our stylists will start creating your
-                  Lookbook and send within the delivery time you chose! .
+                  Lookbook and send within the delivery time you chose!
                 </p>
               </div>
-              <div className="bg-colors-broken-white p-4 rounded-lg shadow-lg max-w-sm flex-1">
+              <div className="bg-colors-broken-white p-4 rounded-lg shadow-lg flex-1">
                 <h3 className="text-xl font-semibold font-serif text-center text-black">
                   STEP 3: RECEIVAL & DIRECT SHOPPING
                 </h3>
