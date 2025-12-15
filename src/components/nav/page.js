@@ -39,41 +39,36 @@ const NavBar = ({ cartItemCount }) => {
 
         {/* Navigation Links */}
         <ul
-          className={`${
-            isMobileMenuOpen ? "flex" : "hidden"
-          } md:flex flex-col md:flex-row md:space-x-6 space-y-4 md:space-y-0 list-none text-lg w-full md:w-auto absolute md:static top-20 left-0 bg-white md:bg-transparent bg-opacity-90 md:bg-opacity-10 p-4 md:p-0 md:pt-8 transition-all duration-300`}
+          className={`${isMobileMenuOpen ? "flex" : "hidden"
+            } md:flex flex-col md:flex-row md:space-x-6 space-y-4 md:space-y-0 list-none text-lg w-full md:w-auto absolute md:static top-20 left-0 bg-white md:bg-transparent bg-opacity-90 md:bg-opacity-10 p-4 md:p-0 transition-all duration-300`}
         >
           <li
-            className={`text-gray-900 hover:text-gray-500 ${
-              router.pathname === "/" && "underline"
-            }`}
+            className={`text-gray-900 hover:text-gray-500 ${router.pathname === "/" && "underline"
+              }`}
           >
             <Link href="/" onClick={() => setIsMobileMenuOpen(false)}>
               Home
             </Link>
           </li>
           <li
-            className={`text-gray-900 hover:text-gray-500 ${
-              router.pathname === "/howitworks" && "underline"
-            }`}
+            className={`text-gray-900 hover:text-gray-500 ${router.pathname === "/howitworks" && "underline"
+              }`}
           >
             <Link href="/howitworks" onClick={() => setIsMobileMenuOpen(false)}>
               How it works
             </Link>
           </li>
           <li
-            className={`text-gray-900 hover:text-gray-500 ${
-              router.pathname === "/services" && "underline"
-            }`}
+            className={`text-gray-900 hover:text-gray-500 ${router.pathname === "/services" && "underline"
+              }`}
           >
             <Link href="/services" onClick={() => setIsMobileMenuOpen(false)}>
               Services
             </Link>
           </li>
           <li
-            className={`text-gray-900 hover:text-gray-500 ${
-              router.pathname === "/contact" && "underline"
-            }`}
+            className={`text-gray-900 hover:text-gray-500 ${router.pathname === "/contact" && "underline"
+              }`}
           >
             <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)}>
               Contact
@@ -99,9 +94,9 @@ const NavBar = ({ cartItemCount }) => {
               )}
             </Link>
           </li>
-          <li className="flex items-center p-2 justify-center md:justify-end">
+          <li className="flex items-center justify-center md:justify-end">
             <Link href="/services" onClick={() => setIsMobileMenuOpen(false)}>
-              <button className="bg-brown-dark text-white p-3 pl-6 pr-6 pt-4 pb-4 rounded-3xl text-md">
+              <button className="bg-brown-dark text-white px-5 py-2 rounded-3xl text-md -mt-2">
                 Get Styled
               </button>
             </Link>
