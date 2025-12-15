@@ -19,7 +19,7 @@ const NavBar = ({ cartItemCount }) => {
   };
 
   return (
-    <nav className="fixed p-4 top-0 left-0 w-full z-10 bg-white bg-opacity-10 shadow-md backdrop-blur-md transition-all duration-300">
+    <nav className="fixed p-4 top-0 left-0 w-full z-50 bg-white bg-opacity-10 shadow-md backdrop-blur-md transition-all duration-300">
       <div className="flex flex-col md:flex-row justify-between items-center max-w-screen-xl mx-auto px-4 w-full h-20">
         {/* Logo and Mobile Menu Toggle */}
         <div className="flex justify-between items-center w-full md:w-auto">

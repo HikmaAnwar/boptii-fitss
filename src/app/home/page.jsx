@@ -7,14 +7,17 @@ const Home = () => {
     <div className="bg-white">
       {/* Hero Section */}
       <div className="relative h-screen w-full overflow-hidden">
-        <Image
-          src="/assets/wardrobe2.jpg"
-          alt="wardrobe img"
-          layout="fill"
-          objectFit="cover"
-          priority={true}
-          className="w-full h-full"
-        />
+        {/* Background Image - Absolute positioned to fill only hero section */}
+        <div className="absolute inset-0">
+          <Image
+            src="/assets/wardrobe2.jpg"
+            alt="wardrobe img"
+            layout="fill"
+            objectFit="cover"
+            priority={true}
+            className="w-full h-full"
+          />
+        </div>
         {/* Sand Grain Overlay */}
         <style jsx>{`
           @keyframes sandMotion {
@@ -54,8 +57,9 @@ const Home = () => {
             opacity: 0.7
           }}
         ></div>
-        <div className="absolute inset-0 flex flex-col items-center justify-center px-4 pt-24 md:pt-44 text-center z-10">
-          <p className="text-black font-bold text-2xl sm:text-3xl md:text-4xl font-serif mt-8 mb-6">
+        {/* Content - Absolute positioned within hero section */}
+        <div className="absolute inset-0 flex flex-col items-center justify-center px-4 sm:px-6 text-center z-10">
+          <p className="text-black font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif mt-4 sm:mt-8 mb-4 sm:mb-6">
             VIRTUAL WARDROBE STYLING
           </p>
           <Link
@@ -65,7 +69,7 @@ const Home = () => {
           >
             By Hikma Anwar
           </Link>
-          <Link href="/services">
+          <Link href="/services" className="mb-10 sm:mb-12 md:mb-0">
             <button className="bg-brown-dark text-white p-2 sm:p-3 pl-4 sm:pl-6 pr-4 sm:pr-6 pt-3 sm:pt-4 pb-3 sm:pb-4 rounded-3xl text-sm sm:text-md my-6">
               Get Styled
             </button>
@@ -74,60 +78,63 @@ const Home = () => {
       </div>
 
       {/* How It Works Section */}
-      <div className="py-0 px-0">
-        <div className="relative">
+      <div className="relative w-full">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
           <Image
             src="/assets/vogue.jpg"
             alt="vogue cover"
-            layout="responsive"
-            width={1500}
-            height={2000}
+            layout="fill"
+            objectFit="cover"
+            className="opacity-100"
           />
-          <div className="absolute inset-0 flex flex-col items-center justify-center px-4 pt-16 md:pt-24 mt-4 pb-16 md:pb-24">
-            <p className="italic font-semibold font-serif text-black text-2xl sm:text-3xl md:text-4xl mb-8 md:mb-16 pb-8 md:pb-14">
-              HOW IT WORKS
-            </p>
-            <div className="flex flex-col space-y-6 md:flex-row md:space-y-0 md:space-x-4 pb-4 w-full max-w-5xl">
-              <div className="bg-colors-broken-white p-4 rounded-lg shadow-lg flex-1">
-                <h3 className="text-lg sm:text-xl text-center text-black font-serif font-semibold">
-                  STEP 1: STYLE QUIZ & PAYMENT
-                </h3>
-                <p className="mt-2 text-center text-black font-san text-sm sm:text-base">
-                  Help our stylists create your personalized outfits by taking a
-                  25 question style quiz about your sizing, budget, aesthetic,
-                  and more! After the style quiz, your Lookbook will be added to
-                  your cart to check out and place your order.
-                </p>
-              </div>
-              <div className="bg-colors-broken-white p-4 rounded-lg shadow-lg flex-1">
-                <h3 className="text-lg sm:text-xl text-center text-black font-serif font-semibold">
-                  STEP 2: WAITING PERIOD
-                </h3>
-                <p className="mt-2 text-center text-black font-san text-sm sm:text-base">
-                  Once your order is processed, you may email us inspo pictures
-                  or products you already own that you would like to see styled
-                  in your lookbook. Our stylists will start creating your
-                  Lookbook and send within the delivery time you chose!
-                </p>
-              </div>
-              <div className="bg-colors-broken-white p-4 rounded-lg shadow-lg flex-1">
-                <h3 className="text-lg sm:text-xl font-semibold font-serif text-center text-black">
-                  STEP 3: RECEIVAL & DIRECT SHOPPING
-                </h3>
-                <p className="mt-2 text-center text-black font-san text-sm sm:text-base">
-                  Receive your Personalized Lookbook via your preferred email
-                  and start shopping for your outfits directly from your
-                  Lookbook! All styled pieces in your Lookbook will be linked,
-                  enabling you to easily click and shop.
-                </p>
-              </div>
+        </div>
+
+        {/* Content - Relative positioned so it dictates height */}
+        <div className="relative z-10 flex flex-col items-center justify-center px-3 sm:px-4 py-8 sm:py-16 md:py-20">
+          <p className="italic font-semibold font-serif text-black text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-8 md:mb-16">
+            HOW IT WORKS
+          </p>
+          <div className="flex flex-col space-y-6 sm:space-y-8 md:flex-row md:space-y-0 md:space-x-8 pb-4 w-full max-w-6xl px-3 sm:px-6 md:px-8">
+            <div className="bg-colors-broken-white p-4 sm:p-6 md:p-8 rounded-lg shadow-lg flex-1">
+              <h3 className="text-base sm:text-lg md:text-xl text-center text-black font-serif font-semibold pb-3 sm:pb-4">
+                STEP 1: STYLE QUIZ & PAYMENT
+              </h3>
+              <p className="mt-2 text-center text-black font-san text-sm sm:text-base">
+                Help our stylists create your personalized outfits by taking a
+                25 question style quiz about your sizing, budget, aesthetic,
+                and more! After the style quiz, your Lookbook will be added to
+                your cart to check out and place your order.
+              </p>
             </div>
-            <Link className="pt-6" href="/services">
-              <button className="bg-brown-dark text-white p-2 sm:p-3 pl-4 sm:pl-6 pr-4 sm:pr-6 pt-3 sm:pt-4 pb-3 sm:pb-4 rounded-3xl text-sm sm:text-md my-6">
-                Get Styled
-              </button>
-            </Link>
+            <div className="bg-colors-broken-white p-4 sm:p-6 md:p-8 rounded-lg shadow-lg flex-1">
+              <h3 className="text-base sm:text-lg md:text-xl text-center text-black font-serif font-semibold pb-3 sm:pb-4">
+                STEP 2: WAITING PERIOD
+              </h3>
+              <p className="mt-2 text-center text-black font-san text-sm sm:text-base">
+                Once your order is processed, you may email us inspo pictures
+                or products you already own that you would like to see styled
+                in your lookbook. Our stylists will start creating your
+                Lookbook and send within the delivery time you chose!
+              </p>
+            </div>
+            <div className="bg-colors-broken-white p-4 sm:p-6 md:p-8 rounded-lg shadow-lg flex-1">
+              <h3 className="text-base sm:text-lg md:text-xl font-semibold font-serif text-center text-black pb-3 sm:pb-4">
+                STEP 3: RECEIVAL & DIRECT SHOPPING
+              </h3>
+              <p className="mt-2 text-center text-black font-san text-sm sm:text-base">
+                Receive your Personalized Lookbook via your preferred email
+                and start shopping for your outfits directly from your
+                Lookbook! All styled pieces in your Lookbook will be linked,
+                enabling you to easily click and shop.
+              </p>
+            </div>
           </div>
+          <Link className="pt-6" href="/services">
+            <button className="bg-brown-dark text-white p-2 sm:p-3 pl-4 sm:pl-6 pr-4 sm:pr-6 pt-3 sm:pt-4 pb-3 sm:pb-4 rounded-3xl text-sm sm:text-md my-6">
+              Get Styled
+            </button>
+          </Link>
         </div>
       </div>
     </div>
